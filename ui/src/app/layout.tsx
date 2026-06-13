@@ -4,7 +4,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Suspense } from "react";
 
-import ChatwootWidget from "@/components/ChatwootWidget";
 import AppLayout from "@/components/layout/AppLayout";
 import PostHogIdentify from "@/components/PostHogIdentify";
 import { SentryErrorBoundary } from "@/components/SentryErrorBoundary";
@@ -28,7 +27,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dograh",
+  title: "Voice Studio - Tamale",
   description: "Open Source Voice Assistant Workflow Builder",
 };
 
@@ -58,6 +57,8 @@ export default function RootLayout({
             `,
           }}
         />
+        <link rel="stylesheet" href="/tamale-overrides.css" />
+        <script src="/tamale-edit-interceptor.js" defer></script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
@@ -73,7 +74,6 @@ export default function RootLayout({
                         {children}
                       </AppLayout>
                       <Toaster />
-                      <ChatwootWidget />
                     </OnboardingProvider>
                   </TelephonyConfigWarningsProvider>
                 </OrgConfigProvider>

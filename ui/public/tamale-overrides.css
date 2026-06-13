@@ -1,0 +1,14 @@
+/* TAMALE white-label CSS overrides */
+.react-flow,
+.reactflow-wrapper,
+[class*="reactflow"],
+[class*="ReactFlow"] {
+  display: none !important;
+}
+button[data-testid*="create-agent" i],
+button[aria-label*="Create Agent" i] {
+  display: none !important;
+}
+a[href="#TAMALE_HIDDEN"] {
+  display: none !important;
+}
