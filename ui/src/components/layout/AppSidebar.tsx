@@ -121,11 +121,6 @@ const NAV_SECTIONS: SidebarNavSection[] = [
         url: "/recordings",
         icon: AudioLines,
       },
-      {
-        title: "Developers",
-        url: "/api-keys",
-        icon: Key,
-      },
     ],
   },
   {
@@ -135,11 +130,6 @@ const NAV_SECTIONS: SidebarNavSection[] = [
         title: "Agent Runs",
         url: "/usage",
         icon: TrendingUp,
-      },
-      {
-        title: "Billing",
-        url: "/billing",
-        icon: CircleDollarSign,
       },
       {
         title: "Reports",
